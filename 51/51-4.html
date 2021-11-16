@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript BOM Location Object</title>
+</head>
+
+<body>
+
+	<h1>현재 창에 문서 불러오기</h1>
+	<p>아래 버튼을 눌러 새로운 문서를 연 후에 브라우저의 뒤로 가기 버튼을 눌러보세요!</p>
+	<button onclick="openDocument()">새로운 문서 열기</button>
+	<button onclick="openDocumentWithReplace()">이전 문서 삭제 후 새로운 문서 열기</button>
+	
+	<script>
+		function openDocument() {
+			location.assign("/51/51-3.html");
+		}
+		function openDocumentWithReplace() {
+			location.replace("/51/51-1.html");
+		}
+	</script>
+	
+</body>
+
+</html>
