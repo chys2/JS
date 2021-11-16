@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Array Object</title>
+</head>
+
+<body>
+
+	<h1>join() 메소드</h1>
+
+	<script>
+		var arr = [1, true, "JavaScript"];
+
+		document.write(arr.join() + "<br>");		// 1,true,JavaScript
+		document.write(arr.join(' + ') + "<br>");	// 1 + true + JavaScript
+		document.write(arr.join(' ') + "<br>");		// 1 true JavaScript
+		document.write(arr.join(''));				// 1trueJavaScript
+	</script>
+	
+</body>
+
+</html>

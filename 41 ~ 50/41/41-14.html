@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Array Object</title>
+</head>
+
+<body>
+
+	<h1>filter() 메소드</h1>
+
+	<script>
+		var arr = [-10, 5, 100, -20, 40];
+		function compareValue(value) {
+			return value < 10;
+		}
+
+		var lessTen = arr.filter(compareValue);
+		document.write(lessTen);		// [-10,5,-20]
+	</script>
+	
+</body>
+
+</html>
